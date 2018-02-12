@@ -12,4 +12,5 @@ cd release
 for bin in *; do
     mv "$bin" "$name"
     gzip "$name"
+    mv "${name}.gz" "${bin}.gz"
 done
